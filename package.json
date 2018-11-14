@@ -1,0 +1,25 @@
+{
+  "name": "javascript-ws-local-storage",
+  "version": "1.0.0",
+  "description": "Using local storage.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/treehouse/javascript-ws-local-storage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "express": "^4.13.4",
+    "path": "^0.12.7"
+  }
+}
