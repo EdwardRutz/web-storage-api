@@ -2,7 +2,7 @@
 
 < Work in Progress >
 
-> Using local storage in the browser with JavaScript.
+> Using local storage (DOM Storage) in the browser with JavaScript.
 > - A basic webpage with a search bar to input and store terms in the browser.
 > - Search terms are saved in local storage and displayed on page.
 > - Terms persist between browser sessions.
@@ -28,8 +28,10 @@
 
 ## Notes
 
-- Web storage limit is around 5-10MB.
+- Web storage limit is around 5-10 MB.
 - Stores on hard-drive.
+- Local storage is not secure so don't use for passwords and sensitive data
+- Is accessible via the domain where the storage was set and can be accessed by any JavaScript executed on the page.
 - Persistent storage.
 - Provides two objects for storing data on the client: `window.localStorage` and `window.sessionStorage`.
 - `window.localStorage` - stores data with no expiration date
@@ -39,6 +41,20 @@
 - Integers will be stored as type string.
 - Local storage can only be read by client-side while cookies are read by the server.
 
+### Demo: set color in local storage then get it
+
+- Open browser console and type
+```
+    localStorage.setItem('color', 'green')
+    sessionStorage.setItem('color', 'orange')
+    
+    localStorage.getItem('color')
+        (Returns: "green")
+    sessionStorage.getItem('color')
+        (Returns: "orange")
+```
+
+
 ## Sources
 
 - [Treehouse: Using Local Storage with JavaScript](https://teamtreehouse.com/library/using-local-storage-with-javascript)
@@ -47,6 +63,7 @@
 - [MDN Web Storage Demo](https://mdn.github.io/dom-examples/web-storage/)
 - [W3 Schools: HTML 5 Web Storage](https://www.w3schools.com/html/html5_webstorage.asp)
 - [HTML Storage APIs](https://medium.com/@ramsunvtech/onfocus-html5-storage-apis-b45d92aa424b)
+- [Wikipedia: Web Storage](https://en.wikipedia.org/wiki/Web_storage)
 - [Dr.Dobbs: The Local Storage API](http://www.drdobbs.com/web-development/the-localstorage-api/240000682)
 - [Dr.Dobbs: Understanding Client Side Storage in the Web](http://www.drdobbs.com/web-development/understanding-client-side-storage-in-web/232900805)
 
